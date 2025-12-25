@@ -4,10 +4,10 @@ import profileImg from "./assets/profile.jpg";
 type LinkItem = { label: string; href: string };
 
 const links: LinkItem[] = [
-  { label: "GitHub", href: "https://github.com/YOUR_GITHUB_USERNAME" },
+  { label: "GitHub", href: "https://github.com/JiachenJasonZhong" },
   { label: "Google Scholar", href: "https://scholar.google.com" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/YOUR_HANDLE" },
-  { label: "Email", href: "mailto:your@email.com" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/jiachen-zhong" },
+  { label: "Email", href: "mailto:mrjiachenzhong@gmail.com" },
 ];
 
 export default function App() {
@@ -19,9 +19,9 @@ export default function App() {
 
       <header className="header">
         <div className="brand">
-          <div className="brand__name">Jiachen Zhong</div>
+          <div className="brand__name">Jiachen (Jason) Zhong</div>
           <div className="brand__meta">
-            Data Scientist · ML Systems · Human-AI Collaboration
+            Data Scientist · ML/LLM Systems · Statistical Modeling
           </div>
         </div>
 
@@ -37,15 +37,15 @@ export default function App() {
       <main id="content" className="content">
         <section className="hero" id="about">
           <div className="hero__left">
-            <p className="kicker">Personal Homepage</p>
+            <p className="kicker">Data Scientist @ OxeFit</p>
             <h1 className="title">
-              Building reliable ML + LLM systems that stand up to real-world use.
+              Building production ML/LLM systems for personalized AI experiences.
             </h1>
             <p className="lede">
-              I’m a researcher/engineer working on machine learning, evaluation,
-              and human-AI collaboration. I care about rigor (data, metrics,
-              ablations) and practical engineering (reproducibility,
-              debuggability, deployment).
+              I'm a Data Scientist specializing in machine learning, LLM agents,
+              and time series forecasting. I focus on deploying reliable AI systems—from
+              multi-agent architectures to production pipelines—that deliver real impact
+              through rigorous evaluation and scalable engineering.
             </p>
 
             <div className="linkRow" role="list">
@@ -57,8 +57,7 @@ export default function App() {
             </div>
 
             <div className="note">
-              <strong>Currently:</strong> placeholder affiliation / team · Dallas,
-              TX (CT). <span className="muted">Replace this later.</span>
+              <strong>Currently:</strong> Data Scientist at OxeFit, Inc. · Dallas, TX
             </div>
           </div>
 
@@ -71,9 +70,9 @@ export default function App() {
             <div className="card">
               <div className="card__title">Quick Facts</div>
               <ul className="list">
-                <li>Interests: ML evaluation, LLM agents, health/clinical NLP</li>
-                <li>Methods: modeling, experiments, causal thinking</li>
-                <li>Tooling: Python, TS, FastAPI, MongoDB, GitHub</li>
+                <li>Education: M.S. Computational Finance (UW), M.S. Data Science (UvA)</li>
+                <li>Interests: LLM Agents, Time Series Forecasting, ML Evaluation</li>
+                <li>Tech Stack: Python, R, SQL, LangGraph, MongoDB, FastAPI</li>
               </ul>
             </div>
           </div>
@@ -87,24 +86,25 @@ export default function App() {
 
           <div className="grid">
             <div className="panel">
-              <h3>Evaluation & Benchmarking</h3>
+              <h3>LLM Multi-Agent Systems</h3>
               <p>
-                Designing reproducible evaluation pipelines: careful metrics,
-                robustness checks, and error taxonomy for model behavior.
+                Building production-ready agent architectures with LangGraph, hybrid
+                memory systems, and vector search for context-aware reasoning and
+                personalized AI experiences.
               </p>
             </div>
             <div className="panel">
-              <h3>LLM Systems & Agents</h3>
+              <h3>Time Series & Forecasting</h3>
               <p>
-                Building reliable multi-agent workflows, memory/retrieval, and
-                structured outputs with traceability.
+                Developing ML-based forecasting models for demand prediction, uncovering
+                temporal patterns, and building scalable pipelines that improve business outcomes.
               </p>
             </div>
             <div className="panel">
-              <h3>Human-AI Collaboration</h3>
+              <h3>ML Evaluation & Reliability</h3>
               <p>
-                Interfaces, explanation, and interactive analytics to help people
-                make better decisions with AI.
+                Implementing robust evaluation workflows with tracing, automated testing,
+                and class balancing techniques to ensure model stability and performance.
               </p>
             </div>
           </div>
@@ -159,39 +159,39 @@ export default function App() {
           <div className="projects">
             <article className="project">
               <div className="project__top">
-                <h3>OxeAI: Multi-agent Health Analytics</h3>
+                <h3>Predicting Heart Disease with ML Methods</h3>
                 <div className="tags">
-                  <span className="tag">LLM Agents</span>
-                  <span className="tag">Memory</span>
-                  <span className="tag">FastAPI</span>
+                  <span className="tag">Machine Learning</span>
+                  <span className="tag">Healthcare</span>
+                  <span className="tag">Class Balancing</span>
                 </div>
               </div>
               <p>
-                Built a multi-agent system with structured health logs, episodic/semantic
-                memory, and evaluation hooks for debugging and traceability.
+                Led ML study on 360,000+ health records comparing 10+ algorithms for early heart disease
+                detection. Implemented SMOTE-based class balancing and feature selection, improving recall
+                by 141.75% and enabling cost-effective early detection for broader public access.
               </p>
               <div className="project__links">
-                <a href="#contact">Repo</a>
-                <a href="#contact">Demo</a>
+                <a href="https://github.com/JiachenJasonZhong">GitHub</a>
               </div>
             </article>
 
             <article className="project">
               <div className="project__top">
-                <h3>Shot Peening ML: CNN Deformation Predictor</h3>
+                <h3>ML-Based Crypto Fraud Detection</h3>
                 <div className="tags">
-                  <span className="tag">Deep Learning</span>
-                  <span className="tag">Aerospace</span>
-                  <span className="tag">Pipeline</span>
+                  <span className="tag">Fraud Detection</span>
+                  <span className="tag">Time Series</span>
+                  <span className="tag">PySpark</span>
                 </div>
               </div>
               <p>
-                Implemented and optimized a CNN pipeline to approximate simulation outputs,
-                enabling faster iteration for engineering workflows.
+                Designed rolling-window validation pipeline to capture evolving fraud patterns across 200K+ Bitcoin
+                transactions. Improved detection of coordinated crypto fraud by 5% F1 score through aggregated
+                transaction features, providing time-sensitive AML solution.
               </p>
               <div className="project__links">
-                <a href="#contact">Report</a>
-                <a href="#contact">Code</a>
+                <a href="https://github.com/JiachenJasonZhong">GitHub</a>
               </div>
             </article>
           </div>
@@ -202,15 +202,15 @@ export default function App() {
           <div className="contact">
             <div className="contact__item">
               <div className="label">Email</div>
-              <a href="mailto:your@email.com">your@email.com</a>
+              <a href="mailto:mrjiachenzhong@gmail.com">mrjiachenzhong@gmail.com</a>
             </div>
             <div className="contact__item">
               <div className="label">Location</div>
-              <div>Dallas, TX (Central Time)</div>
+              <div>Dallas, TX · (206) 356-4422</div>
             </div>
             <div className="contact__item">
-              <div className="label">CV</div>
-              <a href="#contact">Add a PDF link later</a>
+              <div className="label">CV / Resume</div>
+              <a href="/JiachenZhong_CV.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
             </div>
           </div>
         </section>
