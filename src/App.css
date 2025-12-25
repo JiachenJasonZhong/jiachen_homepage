@@ -41,14 +41,14 @@
 }
 
 .brand__name {
-  font-size: 1.55rem;
-  font-weight: 650;
+  font-size: 1.65rem;
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
 .brand__meta {
-  margin-top: 6px;
+  margin-top: 8px;
   color: var(--muted);
-  font-size: 0.98rem;
+  font-size: 1rem;
 }
 
 .nav {
@@ -78,10 +78,11 @@
 
 .hero {
   display: grid;
-  grid-template-columns: 1.4fr 0.9fr;
-  gap: 24px;
-  padding: 34px 0 10px;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  padding: 40px 0 20px;
   border-top: 1px solid var(--border);
+  align-items: start;
 }
 
 .kicker {
@@ -91,16 +92,18 @@
 }
 
 .title {
-  margin: 0 0 14px;
-  font-size: 2.2rem;
-  line-height: 1.18;
+  margin: 0 0 18px;
+  font-size: 2.4rem;
+  line-height: 1.2;
   letter-spacing: -0.03em;
+  font-weight: 700;
 }
 
 .lede {
-  margin: 0 0 16px;
+  margin: 0 0 20px;
   color: var(--text);
-  font-size: 1.06rem;
+  font-size: 1.08rem;
+  line-height: 1.8;
 }
 
 .linkRow {
@@ -141,15 +144,16 @@
   gap: 14px;
 }
 
-/* ✅ 圆形头像（你要的“圆圈效果”） */
+/* ✅ 圆形头像（优化后的尺寸和效果） */
 .avatar {
-  width: 96px;
-  height: 96px;
+  width: 180px;
+  height: 180px;
   border-radius: 999px;
   overflow: hidden;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
+  border: 3px solid var(--border);
+  box-shadow: 0 4px 12px rgba(31, 35, 40, 0.1);
   background: rgba(31, 35, 40, 0.02);
+  margin: 0 auto 20px;
 }
 
 .avatar img {
@@ -162,28 +166,32 @@
 .card {
   border: 1px solid var(--border);
   border-radius: 18px;
-  padding: 14px 16px;
-  box-shadow: var(--shadow);
+  padding: 20px 22px;
+  box-shadow: 0 2px 8px rgba(31, 35, 40, 0.08);
+  background: rgba(255, 255, 255, 0.5);
 }
 .card__title {
-  font-weight: 650;
-  margin-bottom: 8px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
 }
 .list {
   margin: 0;
   padding-left: 18px;
   color: var(--muted);
+  line-height: 1.8;
 }
-.list li { margin: 6px 0; }
+.list li { margin: 8px 0; }
 
 .section {
-  padding: 30px 0 10px;
+  padding: 40px 0 20px;
   border-top: 1px solid var(--border);
 }
 .section h2 {
-  margin: 0 0 8px;
-  font-size: 1.35rem;
+  margin: 0 0 12px;
+  font-size: 1.5rem;
   letter-spacing: -0.01em;
+  font-weight: 700;
 }
 .muted {
   color: var(--muted);
@@ -215,14 +223,17 @@
   padding-left: 18px;
 }
 .pub {
-  margin: 14px 0 18px;
+  margin: 18px 0 24px;
 }
 .pub__title {
-  font-weight: 650;
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.5;
 }
 .pub__meta {
-  margin-top: 4px;
+  margin-top: 6px;
   color: var(--muted);
+  line-height: 1.6;
 }
 .pub__links {
   margin-top: 6px;
@@ -248,8 +259,13 @@
 .project {
   border: 1px solid var(--border);
   border-radius: 18px;
-  padding: 14px 16px;
-  box-shadow: var(--shadow);
+  padding: 20px 24px;
+  box-shadow: 0 2px 8px rgba(31, 35, 40, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.project:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(31, 35, 40, 0.12);
 }
 .project__top {
   display: flex;
@@ -259,11 +275,13 @@
 }
 .project h3 {
   margin: 0;
-  font-size: 1.06rem;
+  font-size: 1.15rem;
+  font-weight: 700;
 }
 .project p {
-  margin: 10px 0 0;
+  margin: 12px 0 0;
   color: var(--muted);
+  line-height: 1.7;
 }
 .project__links {
   margin-top: 10px;
