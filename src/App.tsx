@@ -206,7 +206,7 @@ export default function App() {
             </div>
             <div className="contact__item">
               <div className="label">Location</div>
-              <div>Dallas, TX · (206) 356-4422</div>
+              <div>Dallas, TX</div>
             </div>
             <div className="contact__item">
               <div className="label">CV / Resume</div>
