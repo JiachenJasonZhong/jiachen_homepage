@@ -27,8 +27,8 @@ export default function App() {
 
         <nav className="nav" aria-label="Primary">
           <a href="#about">About</a>
-          <a href="#experience">Experience</a>
           <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -75,62 +75,6 @@ export default function App() {
                 <li>Tech Stack: Python, R, SQL, LangGraph, MongoDB, FastAPI</li>
               </ul>
             </div>
-          </div>
-        </section>
-
-        <section className="section" id="experience">
-          <h2>Work Experience</h2>
-
-          <div className="projects">
-            <article className="project">
-              <div className="project__top">
-                <h3>Data Scientist</h3>
-                <div className="tags">
-                  <span className="tag">Sep 2025 - Present</span>
-                </div>
-              </div>
-              <p className="pub__meta" style={{ marginTop: '8px', marginBottom: '12px' }}>
-                <strong>OxeFit, Inc.</strong> · Dallas, TX · Data Science and AI Team
-              </p>
-              <ul className="list" style={{ paddingLeft: '18px', margin: 0 }}>
-                <li>Built production LLM multi-agent system with LangGraph + FastAPI for personalized wellness coaching</li>
-                <li>Designed hybrid memory architecture (episodic + semantic) with MongoDB Atlas Vector Search for context-aware reasoning</li>
-                <li>Contributed to LLM evaluation workflow using LangSmith tracing and automated regression tests</li>
-              </ul>
-            </article>
-
-            <article className="project">
-              <div className="project__top">
-                <h3>Data Scientist Intern</h3>
-                <div className="tags">
-                  <span className="tag">Apr 2023 - Sep 2023</span>
-                </div>
-              </div>
-              <p className="pub__meta" style={{ marginTop: '8px', marginBottom: '12px' }}>
-                <strong>Dassault Systèmes</strong> · Den Bosch, Netherlands · R&D Department
-              </p>
-              <ul className="list" style={{ paddingLeft: '18px', margin: 0 }}>
-                <li>Led time series forecasting initiative with ML on 80K+ weekly shipments, improving accuracy by 15%</li>
-                <li>Uncovered calendar effects as key drivers, boosting forecast performance by 13%</li>
-                <li>Built reproducible end-to-end pipelines with cloud version control for scalability</li>
-              </ul>
-            </article>
-
-            <article className="project">
-              <div className="project__top">
-                <h3>Data Analyst Intern</h3>
-                <div className="tags">
-                  <span className="tag">Oct 2021 - Apr 2022</span>
-                </div>
-              </div>
-              <p className="pub__meta" style={{ marginTop: '8px', marginBottom: '12px' }}>
-                <strong>Xiaomi Technology</strong> · Amsterdam, Netherlands · Retail Department
-              </p>
-              <ul className="list" style={{ paddingLeft: '18px', margin: 0 }}>
-                <li>Analyzed West EU sales data and maintained daily reports, boosting regional sales by 21%</li>
-                <li>Built Power BI dashboards delivering insights that drove 12% growth with 3× ROI</li>
-              </ul>
-            </article>
           </div>
         </section>
 
