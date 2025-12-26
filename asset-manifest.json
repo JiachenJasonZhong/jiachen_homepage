@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/jiachen_homepage/static/css/main.d1c836a2.css",
+    "main.js": "/jiachen_homepage/static/js/main.a1573f91.js",
+    "static/js/453.f790a23c.chunk.js": "/jiachen_homepage/static/js/453.f790a23c.chunk.js",
+    "static/media/profile.jpg": "/jiachen_homepage/static/media/profile.4902fdbb9fefa69e79e9.jpg",
+    "index.html": "/jiachen_homepage/index.html",
+    "main.d1c836a2.css.map": "/jiachen_homepage/static/css/main.d1c836a2.css.map",
+    "main.a1573f91.js.map": "/jiachen_homepage/static/js/main.a1573f91.js.map",
+    "453.f790a23c.chunk.js.map": "/jiachen_homepage/static/js/453.f790a23c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1c836a2.css",
+    "static/js/main.a1573f91.js"
+  ]
+}
