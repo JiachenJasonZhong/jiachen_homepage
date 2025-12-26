@@ -281,7 +281,7 @@ export default function App() {
 
         <footer className="footer">
           <div className="muted">
-            © {new Date().getFullYear()} Jiachen Zhong · Built with React + TypeScript
+            © {new Date().getFullYear()} Jiachen Zhong
           </div>
         </footer>
       </main>
