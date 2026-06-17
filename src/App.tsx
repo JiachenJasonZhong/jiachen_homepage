@@ -47,8 +47,9 @@ export default function App() {
             <p className="lede">
               My work focuses on deploying reliable AI systems—from multi-agent architectures
               to machine learning solutions—that deliver real impact through rigorous evaluation
-              and scalable engineering. I'm particularly interested in LLM agents, ML evaluation
-              frameworks, and building robust production systems.
+              and scalable engineering. I'm particularly interested in applied AI systems,
+              human-AI collaboration, decision intelligence, and reinforcement learning
+              for real-world decision-making.
             </p>
 
             <div className="linkRow" role="list">
@@ -73,8 +74,14 @@ export default function App() {
             <div className="card">
               <div className="card__title">Quick Facts</div>
               <ul className="list">
-                <li>Education: M.S. Computational Finance (UW), M.S. Data Science (UvA)</li>
-                <li>Interests: LLM Agents, Time Series Forecasting, ML Evaluation</li>
+                <li>
+                  Education: M.S. Computational Finance (UW){" "}
+                  <span className="muted" style={{ fontSize: "0.85em" }}>
+                    (Applied Mathematics)
+                  </span>
+                  , M.S. Data Science (UvA)
+                </li>
+                <li>Interests: Applied AI Systems, Agentic AI, Decision Intelligence, ML Evaluation, RL for application</li>
                 <li>Tech Stack: Python, R, SQL, LangGraph, MongoDB, FastAPI</li>
               </ul>
             </div>
@@ -86,25 +93,27 @@ export default function App() {
 
           <div className="grid">
             <div className="panel">
-              <h3>LLM Multi-Agent Systems</h3>
+              <h3>Applied AI Systems & Agentic AI</h3>
               <p>
-                Building production-ready agent architectures with LangGraph, hybrid
-                memory systems, and vector search for context-aware reasoning and
-                personalized AI experiences.
+                Designing and deploying production-grade agentic AI systems—multi-agent
+                architectures, autonomous workflows, and intelligent orchestration—that
+                operate reliably at scale in real-world environments.
               </p>
             </div>
             <div className="panel">
-              <h3>Time Series & Forecasting</h3>
+              <h3>Human-AI Collaboration & Decision Intelligence</h3>
               <p>
-                Developing ML-based forecasting models for demand prediction, uncovering
-                temporal patterns, and building scalable pipelines that improve business outcomes.
+                Exploring how humans and AI systems collaborate effectively to enhance
+                decision-making, combining data-driven insights with human expertise
+                to improve outcomes across complex domains.
               </p>
             </div>
             <div className="panel">
-              <h3>ML Evaluation & Reliability</h3>
+              <h3>Reinforcement Learning & Human-Centered AI</h3>
               <p>
-                Implementing robust evaluation workflows with tracing, automated testing,
-                and class balancing techniques to ensure model stability and performance.
+                Applying reinforcement learning to real-world decision-making problems
+                and building AI products that are human-centered—intuitive, transparent,
+                and aligned with user needs throughout the productization lifecycle.
               </p>
             </div>
           </div>
@@ -116,10 +125,12 @@ export default function App() {
           <ol className="pubs">
             <li className="pub">
               <div className="pub__title">
-                DeepSeek vs ChatGPT vs Claude: Benchmarking Large Language Models for Clinical Diagnosis Using a Novel ICD-10-CM–Based Evaluation Framework
+                <a href="https://link.springer.com/article/10.1186/s12911-026-03511-3" target="_blank" rel="noopener noreferrer">
+                  DeepSeek vs ChatGPT vs Claude: Benchmarking Large Language Models for Clinical Diagnosis Using a Novel ICD-10-CM–Based Evaluation Framework
+                </a>
               </div>
               <div className="pub__meta">
-                Jiachen Zhong et al. · <em>BMC Medical Informatics and Decision Making</em> (Under Consideration)
+                Jiachen Zhong et al. · <em>BMC Medical Informatics and Decision Making</em> (Published)
               </div>
             </li>
 
@@ -128,25 +139,27 @@ export default function App() {
                 Comparative Analysis of Machine Learning and Data Mining Techniques for Predicting Heart Disease on Imbalanced Dataset
               </div>
               <div className="pub__meta">
-                Jiachen Zhong et al. · <em>Scientific Reports</em> (Under Review)
+                Jiachen Zhong et al. · <em>Scientific Reports</em> (In Revision)
               </div>
             </li>
 
             <li className="pub">
               <div className="pub__title">
-                Enhancing Thyroid Disease Prediction Using Machine Learning: A Comparative Study of Ensemble Models and Class Balancing Techniques
+                <a href="https://link.springer.com/article/10.1186/s43067-026-00315-3" target="_blank" rel="noopener noreferrer">
+                  Enhancing Thyroid Disease Prediction Using Machine Learning: A Comparative Study of Ensemble Models and Class Balancing Techniques
+                </a>
               </div>
               <div className="pub__meta">
-                Jiachen Zhong et al. · <em>Journal of Electrical Systems and Information Technology</em> (Under Review)
+                Jiachen Zhong et al. · <em>Journal of Electrical Systems and Information Technology</em> (Published)
               </div>
             </li>
 
             <li className="pub">
               <div className="pub__title">
-                A Systematic Review of Machine Learning Applications in Infectious Disease Prediction, Diagnosis, and Outbreak Forecasting
+                A Review of Machine Learning Applications in Infectious Disease Prediction, Diagnosis, and Outbreak Forecasting
               </div>
               <div className="pub__meta">
-                Jiachen Zhong et al. · <em>In Revision</em>
+                Jiachen Zhong et al. · <em>Medicine Advances</em> (Published)
               </div>
             </li>
           </ol>
@@ -274,7 +287,7 @@ export default function App() {
             </div>
             <div className="contact__item">
               <div className="label">CV / Resume</div>
-              <a href="/JiachenZhong_CV.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
+              <a href={`${process.env.PUBLIC_URL}/JiachenZhong_CV.pdf`} target="_blank" rel="noopener noreferrer">Download PDF</a>
             </div>
           </div>
         </section>
