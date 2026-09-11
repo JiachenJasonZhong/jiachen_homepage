@@ -29,6 +29,7 @@ export default function App() {
           <a href="#about">About</a>
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
+          <a href="#awards">Awards</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -79,10 +80,16 @@ export default function App() {
                   <span className="muted" style={{ fontSize: "0.85em" }}>
                     (Applied Mathematics)
                   </span>
-                  , M.S. Data Science (UvA)
+                  , M.S. Data Science (UvA), B.S. Econometrics &amp; Data Science (UvA)
+                </li>
+                <li>
+                  Awards: 1st Place, DFWIT 2026 AI &amp; Startup Competition
                 </li>
                 <li>Interests: Applied AI Systems, Agentic AI, Decision Intelligence, ML Evaluation, RL for application</li>
-                <li>Tech Stack: Python, R, SQL, LangGraph, MongoDB, FastAPI</li>
+                <li>
+                  Tech Stack: Python, R, SQL, PyTorch, LangGraph, FastAPI, MongoDB,
+                  PySpark, Azure
+                </li>
               </ul>
             </div>
           </div>
@@ -163,6 +170,59 @@ export default function App() {
               </div>
             </li>
           </ol>
+        </section>
+
+        <section className="section" id="awards">
+          <h2>Awards &amp; Honors</h2>
+          <p className="section__note">
+            Two teams in the same competition &mdash; AI Lead on dasGPT,
+            Team Lead on MiraNote.
+          </p>
+
+          <div className="awards">
+            <article className="award award--top">
+              <div className="award__rank">
+                1st Place &middot; Li &amp; Yang Gold Award
+              </div>
+              <h3>dasGPT &mdash; AI Lead</h3>
+              <div className="award__event">
+                DFWIT 2026 AI &amp; Startup Competition &middot; August 2026
+              </div>
+              <p>
+                Led the AI workstream for a team of geophysics PhDs. Distributed acoustic
+                sensing turns in-place telecom fiber into thousands of vibration sensors
+                along a structure; I built the agent layer that reads channel-level output,
+                surfaces anomalies, and answers structural-health questions in plain
+                language &mdash; validated end-to-end on measurements from an in-service bridge.
+              </p>
+              <div className="tags">
+                <span className="tag">LLM Agents</span>
+                <span className="tag">Sensor Time Series</span>
+                <span className="tag">Anomaly Detection</span>
+              </div>
+            </article>
+
+            <article className="award">
+              <div className="award__rank">
+                4th Place &middot; DreamCollege Bronze Award
+              </div>
+              <h3>MiraNote &mdash; Team Lead</h3>
+              <div className="award__event">
+                DFWIT 2026 AI &amp; Startup Competition &middot; August 2026
+              </div>
+              <p>
+                Led a four-person team across backend, iOS and AI. MiraNote composes voice,
+                photo and text into editable visual journal pages through a companion agent
+                that adapts to each user&apos;s style. I owned system architecture, the iOS
+                backend and the AI pipeline.
+              </p>
+              <div className="tags">
+                <span className="tag">Multimodal AI</span>
+                <span className="tag">Agent Design</span>
+                <span className="tag">iOS</span>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section className="section" id="projects">
