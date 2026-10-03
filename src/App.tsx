@@ -132,6 +132,17 @@ export default function App() {
           <ol className="pubs">
             <li className="pub">
               <div className="pub__title">
+                <a href="https://doi.org/10.1109/ICMLT69916.2026.11688847" target="_blank" rel="noopener noreferrer">
+                  SCOPE: Subgroup-Calibrated Selective Prediction for Compact Vision-Language Models in Edge Chest X-Ray View Classification
+                </a>
+              </div>
+              <div className="pub__meta">
+                Ziwei Wang, Di Zhu, Yanyan Zhang, Yuxuan Huang, Jiachen Zhong, Yiting Wang, Weiyi Li · <em>2026 11th International Conference on Machine Learning Technologies (ICMLT)</em>, IEEE (Published)
+              </div>
+            </li>
+
+            <li className="pub">
+              <div className="pub__title">
                 <a href="https://link.springer.com/article/10.1186/s12911-026-03511-3" target="_blank" rel="noopener noreferrer">
                   DeepSeek vs ChatGPT vs Claude: Benchmarking Large Language Models for Clinical Diagnosis Using a Novel ICD-10-CM–Based Evaluation Framework
                 </a>
