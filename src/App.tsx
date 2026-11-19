@@ -1,5 +1,6 @@
 import "./App.css";
 import profileImg from "./assets/profile.jpg";
+import dasgptHowItWorks from "./assets/dasgpt-how-it-works.jpg";
 
 type LinkItem = { label: string; href: string };
 
@@ -29,6 +30,7 @@ export default function App() {
           <a href="#about">About</a>
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
+          <a href="#ventures">Side Ventures</a>
           <a href="#awards">Awards</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
@@ -63,6 +65,11 @@ export default function App() {
 
             <div className="note">
               <strong>Currently:</strong> Data Scientist at OxeFit, Inc. · Dallas, TX
+              <div>
+                <strong>Also:</strong> Co-founder &amp; AI Lead at{" "}
+                <a href="https://dasgpt.stream" target="_blank" rel="noopener noreferrer">DASGPT</a>
+                {" "}· Founder of MiraNote
+              </div>
             </div>
           </div>
 
@@ -83,7 +90,7 @@ export default function App() {
                   , M.S. Data Science (UvA), B.S. Econometrics &amp; Data Science (UvA)
                 </li>
                 <li>
-                  Awards: 1st Place, DFWIT 2026 AI &amp; Startup Competition
+                  Awards: 1st Place, DFWIT 2026 AI &amp; Startup Competition; 1st Place, DFWIT Venture Ready Pitch Day
                 </li>
                 <li>Interests: Applied AI Systems, Agentic AI, Decision Intelligence, ML Evaluation, RL for application</li>
                 <li>
@@ -183,10 +190,49 @@ export default function App() {
           </ol>
         </section>
 
+        <section className="section" id="ventures">
+          <h2>Side Ventures</h2>
+          <p className="section__note">
+            AI products I build on evenings and weekends, outside my full-time role.
+          </p>
+          <div className="projects">
+            <article className="project">
+              <img src={dasgptHowItWorks} alt="How DASGPT works: fiber on the bridge, a geophysics layer, an AI agent, and the engineer decides" style={{ width: "100%", borderRadius: 12, display: "block", marginBottom: 14 }} />
+              <div className="project__top">
+                <h3>DASGPT &mdash; Co-founder &amp; AI Lead</h3>
+                <div className="tags">
+                  <span className="tag">Distributed Acoustic Sensing</span>
+                  <span className="tag">LLM Agents</span>
+                  <span className="tag">Infrastructure</span>
+                </div>
+              </div>
+              <p>
+                A fiber-optic sensing platform for bridge health monitoring. DASGPT turns the telecom fiber already running along a bridge into continuous vibration sensors, and pairs them with an AI agent that engineers can question in plain language. I lead the AI product and go-to-market, from agent design to outreach with state DOTs and investors.
+              </p>
+              <div className="project__links">
+                <a href="https://dasgpt.stream" target="_blank" rel="noopener noreferrer">dasgpt.stream</a>
+              </div>
+            </article>
+            <article className="project">
+              <div className="project__top">
+                <h3>MiraNote &mdash; Founder</h3>
+                <div className="tags">
+                  <span className="tag">Multimodal AI</span>
+                  <span className="tag">Agent Systems</span>
+                  <span className="tag">iOS</span>
+                </div>
+              </div>
+              <p>
+                An AI journaling app that turns voice notes, photos and text into editable journal pages, with an agent that learns each user&apos;s writing style. I lead a team across design, AI and data science, and built the backend and iOS client.
+              </p>
+            </article>
+          </div>
+        </section>
+
         <section className="section" id="awards">
           <h2>Awards &amp; Honors</h2>
           <p className="section__note">
-            Two teams in the same competition: AI Lead on dasGPT, Team Lead on MiraNote.
+            Two teams at the same competition: dasGPT and MiraNote.
           </p>
 
           <div className="awards">
@@ -194,7 +240,10 @@ export default function App() {
               <div className="award__rank">
                 1st Place &middot; Li &amp; Yang Gold Award
               </div>
-              <h3>dasGPT &mdash; AI Lead</h3>
+              <div className="award__rank">
+                1st Place &middot; DFWIT Venture Ready Pitch Day
+              </div>
+              <h3>dasGPT &mdash; Co-founder &amp; AI Lead</h3>
               <div className="award__event">
                 DFWIT 2026 AI &amp; Startup Competition &middot; August 2026
               </div>
@@ -215,7 +264,7 @@ export default function App() {
               <div className="award__rank">
                 4th Place &middot; DreamCollege Bronze Award
               </div>
-              <h3>MiraNote &mdash; Team Lead</h3>
+              <h3>MiraNote &mdash; Founder</h3>
               <div className="award__event">
                 DFWIT 2026 AI &amp; Startup Competition &middot; August 2026
               </div>
